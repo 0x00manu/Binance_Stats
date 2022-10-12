@@ -1,0 +1,2 @@
+/home/mp/Binance_Robot_Fork/Binance/bin/Debug/net6.0/linux-x64/publish/Binance.pdb
+/home/mp/Binance_Robot_Fork/Binance/bin/Debug/net6.0/linux-x64/publish/Binance

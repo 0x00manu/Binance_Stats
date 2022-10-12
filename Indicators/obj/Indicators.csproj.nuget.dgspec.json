@@ -1,0 +1,164 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/mp/Bollingers/Indicators/Indicators.csproj": {}
+  },
+  "projects": {
+    "/home/mp/Bollingers/Binance/Binance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/mp/Bollingers/Binance/Binance.csproj",
+        "projectName": "Binance",
+        "projectPath": "/home/mp/Bollingers/Binance/Binance.csproj",
+        "packagesPath": "/home/mp/.nuget/packages/",
+        "outputPath": "/home/mp/Bollingers/Binance/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/mp/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.12.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.6, 6.0.6]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[6.0.6, 6.0.6]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.6, 6.0.6]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/mp/Bollingers/Indicators/Indicators.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/mp/Bollingers/Indicators/Indicators.csproj",
+        "projectName": "Indicators",
+        "projectPath": "/home/mp/Bollingers/Indicators/Indicators.csproj",
+        "packagesPath": "/home/mp/.nuget/packages/",
+        "outputPath": "/home/mp/Bollingers/Indicators/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/mp/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/mp/Bollingers/Binance/Binance.csproj": {
+                "projectPath": "/home/mp/Bollingers/Binance/Binance.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "ExcelDataReader": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "skender.stock.indicators": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.6, 6.0.6]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[6.0.6, 6.0.6]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.6, 6.0.6]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
