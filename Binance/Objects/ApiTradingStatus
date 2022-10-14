@@ -3,21 +3,21 @@ namespace Binance.Objects
 
     public class Data                               // API trading status detail
     {
-        public bool isLocked { get; set; }          // API trading function is locked or not
-        public int plannedRecoverTime { get; set; } // If API trading function is locked, this is the planned recover time
-        public TriggerCondition triggerCondition { get; set; }
-        public long updateTime { get; set; }
+        public bool? isLocked { get; set; }          // API trading function is locked or not
+        public int? plannedRecoverTime { get; set; } // If API trading function is locked, this is the planned recover time
+        public TriggerCondition? triggerCondition { get; set; }
+        public long? updateTime { get; set; }
     }
 
     public class apiTradingStatus
     {
-        public Data data { get; set; }
+        public Data? data { get; set; }
     }
 
     public class TriggerCondition
     {
-        public int GCR { get; set; }    // Number of GTC orders
-        public int IFER { get; set; }   // Number of FOK/IOC orders
-        public int UFR { get; set; }    // Number of orders
+        public int? GCR { get; set; }    // Number of GTC orders
+        public int? IFER { get; set; }   // Number of FOK/IOC orders
+        public int? UFR { get; set; }    // Number of orders
     }
 }

@@ -1,14 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "aV90LWC7VyvCXiTb/Y+/ulmv6VAP2cYZJberNrOKTVN28ZV5uxfvvdF+fJMdYqQZRlCWGXzdzj/OzX3qctUQ3g==",
+  "dgSpecHash": "VL1vUF2thvO5Jq1ysfTt9uH7iUwKnTKeTRXm02QaWQjLnmU7zxtdWaHTQdhRBC7PV/Suq7XkT+75CnQu/M75ow==",
   "success": true,
-  "projectFilePath": "/home/mp/Bollingers/Binance/Binance.csproj",
+  "projectFilePath": "/home/mp/Documents/GitRepo/Binance_Stats/Binance/Binance.csproj",
   "expectedPackageFiles": [
     "/home/mp/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
-    "/home/mp/.nuget/packages/restsharp/106.12.0/restsharp.106.12.0.nupkg.sha512",
-    "/home/mp/.nuget/packages/microsoft.netcore.app.ref/6.0.6/microsoft.netcore.app.ref.6.0.6.nupkg.sha512",
-    "/home/mp/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.6/microsoft.aspnetcore.app.ref.6.0.6.nupkg.sha512",
-    "/home/mp/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.6/microsoft.netcore.app.host.linux-x64.6.0.6.nupkg.sha512"
+    "/home/mp/.nuget/packages/restsharp/106.12.0/restsharp.106.12.0.nupkg.sha512"
   ],
   "logs": []
 }
