@@ -2,12 +2,17 @@
 {
     using Binance.Futures.Socket;
     using Binance.Enums.Futures;
+    using System.Drawing;
+
     class Program
     {
         public static async Task Main()
         {
             var p = new Program();
-            p.SymbolStatus();
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("ready");
+            Console.ResetColor();
+            p.StreamExample();
         }
 
         public void ExchangExample()

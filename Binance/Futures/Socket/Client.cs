@@ -43,12 +43,16 @@
         }
         virtual protected void Ws_OnOpen(object sender, EventArgs e)
         {
-            Console.WriteLine($"Binance: SocketClient: Ws_OnOpen: websocket open");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"Binance: SocketClient: Ws_OnOpen: websocket open",ConsoleColor.Green);
+            Console.ResetColor();
         }
 
         virtual protected void Ws_OnClose(object sender, CloseEventArgs e)
         {
-            Console.WriteLine($"Binance: SocketClient: Ws_OnClose: code: {e.Code} reason: {e.Reason}");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine($"Binance: SocketClient: Ws_OnClose: code: {e.Code} reason: {e.Reason}",ConsoleColor.Blue);
+            Console.ResetColor();
             if (!e.WasClean)
             {
                 while (!ws.IsAlive)
@@ -62,12 +66,15 @@
         virtual protected void Ws_OnMessage(object sender, MessageEventArgs e)
         //override protected void Ws_OnMessage(object sender, MessageEventArgs e)
         {
+            Console.ForegroundColor = ConsoleColor.Yellow;
             System.Console.WriteLine($"Binance: SocketClient: Ws.OnMessage: {e.Data}");
         }
 
         virtual protected void Ws_OnError(object sender, ErrorEventArgs e)
         {
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"Binance: SocketClient: Ws_OnError: {e.Message}");
+            Console.ResetColor();
         }
 
         public void SuscribeTrades(string btcusdt, UInt32 id){
@@ -103,7 +110,8 @@
         //TAKES lower case returns upper case
         public void StreamMarkPrice1s(string btcusdt)
         {
-            string markp = $@"wss://fstream.binance.com/ws/{btcusdt.ToLower()}@markPrice@1s";
+            string markp = $@"wss://fstream.binance.com/market/ws/{btcusdt.ToLower()}@markPrice@1s";
+            // string markp = $@"wss://fstream.binance.com/ws/{btcusdt.ToLower()}@markPrice@1s";
             this.Connect(markp);
         }
         ///<summary>
